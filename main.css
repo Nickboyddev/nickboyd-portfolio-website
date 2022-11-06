@@ -409,7 +409,7 @@ p.tools {
 .profile .bottomnavbar {
   position: relative;
   font-family: Helvetica;
-  top: 2450px;
+  top: 260vh;
   display: flex;
   justify-content: space-between;
   width: 100%;
