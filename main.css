@@ -406,6 +406,20 @@ p.tools {
   font-size: 1rem;
 }
 
+hr.line2 {
+  border: none;
+  padding: 0;
+  left: 12vw;
+  top: 50vh;
+  bottom: 100vh;
+  height: 1px;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  opacity: 0.3;
+  background: var(--white);
+  width: 100%;
+}
+
 .profile .bottomnavbar {
   position: relative;
   font-family: Helvetica;
