@@ -92,7 +92,7 @@ body.index {
   width: 100vw;
   height: 100vh;
   content: "";
-  opacity: 0.03;
+  opacity: 0.015;
   z-index: 1000;
   pointer-events: none;
   background: url(./Assets/noise.gif);
