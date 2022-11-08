@@ -2,10 +2,10 @@
 
 const splash = document.querySelector('.splash');
 
-document.addEventListener('DOMContentLoaded', (e)=>{
-	setTimeout(()=>{
-		splash.classList.add('display-none');
-	}, 5000);
+document.addEventListener('DOMContentLoaded', (e) => {
+    setTimeout(() => {
+        splash.classList.add('display-none');
+    }, 5000);
 })
 
 
@@ -28,17 +28,17 @@ function moveCursor(e) {
     outerCursor.style.top = `${y}px`;
 }
 
-let links = Array.from(document.querySelectorAll("a"));
+let links = Array.from(document.querySelectorAll("a, p.myname"));
 
 console.log(links);
 
-links.forEach(link =>{
-    link.addEventListener("mouseover", ()=>{
-    innerCursor.classList.add("grow");
-});
-link.addEventListener("mouseleave", ()=>{
-    innerCursor.classList.remove("grow");
-});
+links.forEach(link => {
+    link.addEventListener("mouseover", () => {
+        innerCursor.classList.add("grow");
+    });
+    link.addEventListener("mouseleave", () => {
+        innerCursor.classList.remove("grow");
+    });
 });
 
 
@@ -48,15 +48,15 @@ const menuItems = [...document.querySelectorAll('.hovereffect')];
 
 menuItems.forEach(item => {
 
-let word = item.children[0].children[0].innerText.split('');
-item.children[0].innerHTML = '';
-word.forEach((letter, idx) => {
-    item.children[0].innerHTML += `<span style="--index: ${idx};">${letter}</span>`;
-})
+    let word = item.children[0].children[0].innerText.split('');
+    item.children[0].innerHTML = '';
+    word.forEach((letter, idx) => {
+        item.children[0].innerHTML += `<span style="--index: ${idx};">${letter}</span>`;
+    })
 
-let cloneDiv = item.children[0].cloneNode(true);
-cloneDiv.style.position = 'relative';
-cloneDiv.style.left = '0'
-cloneDiv.style.top = '-1rem';
-item.appendChild(cloneDiv)
+    let cloneDiv = item.children[0].cloneNode(true);
+    cloneDiv.style.position = 'relative';
+    cloneDiv.style.left = '0'
+    cloneDiv.style.top = '-1rem';
+    item.appendChild(cloneDiv)
 })

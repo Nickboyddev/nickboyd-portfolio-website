@@ -155,10 +155,17 @@ p {
 
 .nickboyd {
   font-size: 6vw;
+  left: 34vw;
   padding: 0;
   margin: 0;
+  position: absolute;
+  top: 2vh;
+}
+
+.myname {
   position: relative;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   top: 2vh;
 }
 
@@ -492,8 +499,9 @@ hr.line3 {
 /* For Tablet Screens */
 
 @media screen and (max-width: 768px) {
-  .nickboyd {
-    font-size: 12vw;
+  p.myname {
+    font-size: 9vw;
+    right: 9vw;
   }
 }
 
