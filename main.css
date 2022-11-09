@@ -13,6 +13,11 @@ html,
   cursor: none;
 }
 
+*::selection {
+  background: var(--white);
+  color: var(--black);
+}
+
 /*************************** HOMEPAGE ****************************/
 
 body.index {
