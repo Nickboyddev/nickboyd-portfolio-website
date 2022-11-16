@@ -1,72 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="google-site-verification" content="yCHbgb4xrVZw_2FqtWpsGsINNTqqAGzy2iUcgZk74lA" />
+    <meta
+      name="google-site-verification"
+      content="yCHbgb4xrVZw_2FqtWpsGsINNTqqAGzy2iUcgZk74lA"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nickboyd Portfolio</title>
-    <link href="https://fonts.cdnfonts.com/css/voga" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rufina&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main.css" />
+    <title>Nickboyd Canedo Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:;base64,=" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body class="index">
-    <div class="splash">
-      <img class="fade-in" src="./Assets/Preloader-GIF.gif" alt="Loading" />
-    </div>
-
-    <div class="topnavbar">
-      <a href="index.html" class="logo"
-        ><img src="./Assets/Logo.svg" alt="logo"
-      /></a>
-      <div class="navlinks">
-        <ul>
-          <li>
-            <div>
-              <a href="#" class="hovereffect">
-                <div>
-                  <span class="spanlinks"> WORKS</span>
-                </div>
-              </a>
-            </div>
-          </li>
-        </ul>
+  <body>
+    <!-----------Top Navbar START-------------->
+    <nav
+      class="topnav-container"
+      data-aos="fade-down"
+      data-aos-easing="ease-out"
+      data-aos-duration="1000"
+      data-aos-delay="400"
+    >
+      <div class="logo-wrapper">
+        <a href="index.html">
+          <img src="./Assets/Logo.svg" alt="logo" />
+        </a>
       </div>
-    </div>
-    <div class="toptext">
-      <div class="portfolio">
-        <p>{ PORTFOLIO }</p>
+      <div class="works-wrapper">
+        <a href="#" class="hovereffect">
+          <div>
+            <span class="spanlinks">WORKS</span>
+          </div>
+        </a>
       </div>
-      <div class="nickboyd">
-        <p class="myname">NICKBOYD CANEDO</p>
+    </nav>
+    <!-----------Top Navbar END-------------->
+    <!-----------Hero Section START-------------->
+    <section class="hero-container">
+      <div
+        class="hero-image"
+        data-aos="fade-in"
+        data-aos-easing="ease-out"
+        data-aos-duration="2000"
+        data-aos-delay="1500"
+      >
+        <img src="./Assets/Lion 2.png" alt="hero" />
       </div>
-    </div>
-    <div class="bottomtext">
-      <div class="designer">
-        <p>WEB DESIGNER, ILLUSTRATOR & ANIMATOR</p>
-      </div>
-      <div class="based">
-        <p>{ BASED IN GERMANY }</p>
-      </div>
-    </div>
-    <div class="bottomnavbar">
-      <div class="copyright">
-        <p>© NICKBOYD CANEDO</p>
-      </div>
-      <a href="profile.html" class="hovereffect">
-        <div>
-          <span class="spanlinks"> PROFILE</span>
+      <div class="text-top-wrapper">
+        <div
+          class="text-portfolio"
+          data-aos="fade-down"
+          data-aos-easing="ease-out"
+          data-aos-duration="1000"
+          data-aos-delay="2300"
+        >
+          { PORTFOLIO }
         </div>
-      </a>
-    </div>
+        <div
+          class="text-nickboyd"
+          data-aos="fade-down"
+          data-aos-easing="ease-out"
+          data-aos-duration="1000"
+          data-aos-delay="2000"
+        >
+          <span class="myname"> NICKBOYD CANEDO </span>
+        </div>
+        <div class="text-bot-wrapper">
+          <div
+            class="text-designer"
+            data-aos="fade-up"
+            data-aos-anchor=".other-element"
+            data-aos-easing="ease-out"
+            data-aos-duration="1000"
+            data-aos-delay="2000"
+          >
+            WEB&nbsp;DEVELOPER,&nbsp;GRAPHIC&nbsp;DESIGNER & ANIMATOR
+          </div>
+          <div
+            class="text-based"
+            data-aos="fade-up"
+            data-aos-anchor=".other-element"
+            data-aos-easing="ease-out"
+            data-aos-duration="1000"
+            data-aos-delay="2300"
+          >
+            { BASED IN GERMANY }
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------Hero Section END-------------->
+    <!-----------Bottom Navbar START-------------->
+    <footer
+      class="bottomnav-container"
+      data-aos="fade-up"
+      data-aos-easing="ease-out"
+      data-aos-duration="1000"
+      data-aos-delay="500"
+      data-aos-anchor=".other-element"
+    >
+      <div class="copyright-wrapper">&copy;&nbsp;NICKBOYD CANEDO</div>
+      <div class="profile-wrapper">
+        <a href="profile.html" class="hovereffect"
+          ><div class="spandiv">
+            <span class="spanlinks">PROFILE</span>
+          </div>
+        </a>
+      </div>
+    </footer>
+    <!-----------Bottom Navbar END-------------->
     <div class="noise"></div>
     <div class="inner-cursor"></div>
     <div class="outer-cursor"></div>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
